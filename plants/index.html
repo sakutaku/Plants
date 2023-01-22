@@ -9,28 +9,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="images/favicon.png">
 </head>
 <body>
     <header class="container header">
-        <div>
-            <a href="#" class="logo-plants">Plants</a>
+        <div class="header-inner">
+            <div>
+                <a href="#" class="logo-plants">Plants</a>
+            </div>
+                <div class="header-bottom">
+                        <button type="button" class="navBtn" id="navBtn"></button>
+                        <nav class="mainNav nav-hidden" id="mainNav">
+                            <ul class="main-nav">
+                                <li class="main-nav-list"><a href="#">Home</a></li>
+                                <li class="main-nav-list"><a href="#">About us</a></li>
+                                <li class="main-nav-list"><a href="#">Service</a></li>
+                                <li class="main-nav-list"><a href="#">Price</a></li>
+                                <li class="main-nav-list"><a href="#">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
         </div>
-        <div>
-            <nav>
-                <ul class="main-nav">
-                    <li class="main-nav-list"><a href="#">Home</a></li>
-                    <li class="main-nav-list"><a href="#">About us</a></li>
-                    <li class="main-nav-list"><a href="#">Service</a></li>
-                    <li class="main-nav-list"><a href="#">Price</a></li>
-                    <li class="main-nav-list"><a href="#">Contacts</a></li>
-                </ul>
-            </nav>
-        </div>
+        
     </header>
     <main>
         <section class="welcome-block container">
             <div class="welcome-block1">
-                <img src="images/img1.png" alt="leafs">
+                <img src="images/img1.png" alt="leafs" class="welcome-block-img">
             </div>
             <div class="welcome-block2">
                 <h1 class="welcome-title">We grow <span>plants</span> and give you   
@@ -55,8 +61,8 @@
                 five centuries, but also the leap into electronic typesetting, remaining 
                 essentially unchanged. </p>
             </div>
-            <div>
-                <img src="images/img2.png" alt="houseplant">
+            <div class="about-block2">
+                <img src="images/img2.png" alt="houseplant" class="about-block-img">
             </div> 
             </div>
             
@@ -118,7 +124,7 @@
         <section class="prices-block">
             <div class="container prices-inner">
                 <div class="prices-inner1">
-                    <h2 class="prices-title title2">Prices</h2>
+                    <h2 class="prices-title title1">Prices</h2>
                     <div class="prices-links">
                         <a href="#" class="prices-link"><span>Basics</span></a>
                         <span></span>
@@ -131,7 +137,7 @@
                     ready to 
                     help you</h4>
                     <button type="button" class="prices-btn">Contact us</button>
-                    <img src="images/img9.png" alt="leafs">
+                    <img src="images/img9.png" alt="leafs" class="prices-img">
                 </div>
             </div>
         </section>
@@ -139,7 +145,6 @@
             <h4 class="contacts-block-title">Contact us</h4>
             <div class="contacts-block-inner">
                 <div class="contacts-block-img">
-                    <!-- <img src="images/img10.png" alt="contact_woman"> -->
                 </div>
                 <div class="select-block">
                     <select>
@@ -155,10 +160,10 @@
     </main>
     <footer class="footer">
         <div class="footer-inner container">
-            <div>
+            <div class="footer1">
                 <a href="https://github.com/sakutaku" class="ftr-link1">&copy; 2022 github</a>
             </div>
-            <div>
+            <div class="footer2">
                 <a href="https://rs.school/js-stage0/" class="ftr-link2">Rolling Scopes School</a>
             </div>
             <div>
@@ -179,5 +184,6 @@
             </div>
         </div>
     </footer>
+    <script src="nav.js"></script>
 </body>
 </html>

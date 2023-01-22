@@ -11,17 +11,20 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 20px;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .container {
-    max-width: 1220px;
+    max-width: 1260px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
-.header{
+.header-inner{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,10 +45,27 @@ body {
     position: absolute;
     top: -6px;
     right: 46px;
-    background-image: url(../images/logo.svg);
+    background-image: url(images/logo.svg);
     background-repeat: no-repeat;
     width: 20px;
     height: 23px;
+}
+.navBtn {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 40px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    background: url("images/burger.svg") center no-repeat;
+}
+.mainNav{
+    position: relative;
+}
+.nav-hidden {
+    height: auto;
 }
 .main-nav{
     list-style: none;
@@ -75,6 +95,9 @@ body {
     justify-content: space-between;
     margin-bottom: 47px;
 }
+.welcome-block-img{
+    width: 100%;
+}
 .welcome-block2{
     width: 44%;
     padding-top: 14px;
@@ -103,10 +126,12 @@ body {
     text-transform: uppercase;
     font-size: 16px;
     color: #000000;
+    transition: all 0.2s ease-in;
 }
 .welcome-btn:hover{
     background-color: #E06733;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .about-block{
     background: #FFFFFF;
@@ -127,6 +152,7 @@ body {
     line-height: 52px;
     color: #499A18;
     margin: 68px 0 37px;
+    font-weight: 400;
 }
 .about-title span{
     color: #E06733;
@@ -134,11 +160,15 @@ body {
 .about-text{
     line-height: 30px;
 }
+.about-block-img{
+    width: 100%;
+}
 .service-block{
     margin-bottom: 63px;
 }
 .service-block-header{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 48px;
 }
@@ -162,10 +192,12 @@ body {
     border-radius: 5px;
     padding: 12px 40px;
     margin-left: 35px;
+    transition: all 0.2s ease-in;
 }
 .service-btns:hover{
     background-color: #E06733;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .service-btns2{
     padding: 12px 54px;
@@ -178,6 +210,7 @@ body {
 .service-img{
     border-radius: 20px 20px 0px 0px;
     margin-bottom: -5px;
+    width: 100%;
 }
 .service-cards{
     width: 27%;
@@ -252,7 +285,7 @@ body {
 }
 .prices-link::after{
     content: "";
-    background-image: url(../images/ic-1.svg);
+    background-image: url(images/ic-1.svg);
     position: absolute;
     width: 16px;
     height: 16px;
@@ -275,10 +308,16 @@ body {
     border-radius: 5px;
     padding: 12px 30px;
     margin-left: 70%;
+    transition: all 0.2s ease-in;
+    font-size: 20px;
+}
+.prices-btn:hover {
+    background-color: #E06733;
+    color: #FFFFFF;
     cursor: pointer;
 }
 .contacts-block{
-    background-image: url(../images/img10.png);
+    background-image: url(images/img10.png);
     background-repeat: no-repeat;
     background-position: 17px -4px;
     background-size: 32%;
@@ -323,7 +362,7 @@ body {
     cursor: pointer;
 }
 .select-block::after{
-    content: url(../images/ic-2.svg);
+    content: url(images/ic-2.svg);
     position: absolute;
     top: 11px;
     right: 35px;
@@ -353,4 +392,3 @@ body {
 .ftr:first-child{
     margin-left: 0;
 }
-/* i'll do it */

@@ -1,0 +1,238 @@
+@media screen and (max-width:1100px) {
+    .welcome-block{
+        flex-direction: row-reverse;
+    }
+    .welcome-block1{
+        width: 40%;
+        margin-bottom: 68px;
+    }
+    .select-block{
+        margin: 37px 0 0 0;
+    }
+}
+@media screen and (max-width:800px){
+    .header{
+        justify-content: initial;
+        margin-bottom: 33px;
+    }
+    .header-bottom{
+        margin-left: 20%;
+    }
+    .welcome-block2{
+        padding-top: 0;
+        width: 48%;
+    }
+    .welcome-title{
+        font-size: 35px;
+        margin-top: 0;
+        margin-bottom: 34px;
+    }
+    .welcome-text{
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+    .about-block{
+        padding: 0 0 87px 0;
+    }
+    .about-block-inner{
+        flex-direction: column;
+    }
+    .about-block1{
+        width: 100%;
+        margin-bottom: 48px;
+    }
+    .about-title{
+        text-align: center;
+        font-size: 35px;
+        padding: 0 99px;
+        line-height: 46px;
+        margin: 38px 0 49px;
+    }
+    .about-block-img{
+        width: 54%;
+    }
+    .about-block2{
+        align-self: center;
+        text-align: center;
+    }
+    .service-title{
+        width: 48%;
+        font-size: 35px;
+        margin: 49px 0 45px 0;
+        line-height: 46px;
+    }
+    .service-button{
+        margin: 0;
+    }
+    .service-btns:first-child{
+        margin: 0;
+    }
+    .service-cards{
+        width: 40%;
+    }
+    .service-block-card{
+        padding: 0 0 51px 0;
+    }
+    .prices-inner{
+        padding-bottom: 73px;
+    } 
+    .prices-inner2{
+        padding: 14% 9% 0 0;
+    }
+    .prices-btn{
+        margin: 0 0 10% 50%;
+    }
+        .title1{
+        font-size: 35px;
+        margin: 39px 0 53px 8px;
+    }
+    .title2{
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 30px;
+    }
+    .contacts-block{
+        padding-bottom: 66%;
+        background-position: center bottom;
+        background-size: 29%;
+    }
+    .contacts-block-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts-block-img{
+        width: 0;
+        height: 0;
+    }
+    .contacts-block-title{
+        margin: 40px 0 60px;
+        padding-right: 50px;
+    }
+    .select-block{
+        min-width: 450px;
+    }
+    .footer{
+        padding-top: 31px;
+    }
+    .footer-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer1{
+        margin-bottom: 16px;
+    }
+    .footer2{
+        margin-bottom: 23px;
+    }
+}
+@media screen and (max-width:700px) {
+    .mainNav {
+        overflow: hidden;
+        transition: height 2s;
+    }
+    .navBtn{
+        display: block;
+    }
+    .main-nav{
+        flex-direction: column;
+    }
+    .main-nav-list{
+        margin-right: 5%;
+    }
+    .welcome-block2{
+        width: 100%;
+    }
+    .prices-inner{
+        flex-direction: column;
+    }
+    .prices-inner2{
+        text-align: center;
+    }
+    .prices-btn{
+        margin: 0 auto;
+    }
+    .prices-img{
+        display: none;
+    }
+    
+    .select-block{
+        min-width: 300px;
+    }
+}
+@media screen and (max-width:500px){
+    .header,
+    .header-inner{
+        margin-bottom: 0;
+    }
+    .welcome-block1{
+        display: none;
+    }
+    .welcome-title{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .welcome-btn{
+        font-size: 10px;
+    }
+    .about-title{
+        font-size: 25px;
+        line-height: 33px;
+        padding: 0;
+    }
+    .about-text{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .service-title{
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .service-btns{
+        font-size: 15px;
+        padding: 8px 28px;
+        margin-left: 9px;
+        margin-bottom: 9px;
+    }
+    .service-cards{
+        width: 100%;
+    }
+    .service-block-card{
+        padding: 0;
+    }
+    .prices-inner1{
+        width: 100%;
+    }
+    .prices-inner2{
+        padding: 0;
+    }
+    .title1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .title2{
+        font-size: 20px;
+    }
+    .prices-links{
+        width: 224px;
+        padding: 34px 24px;
+        margin: 0 auto;
+    }
+    .prices-link{
+        width: 180px;
+        font-size: 15px;
+    }
+    .prices-btn{
+        font-size: 15px;
+    }
+    .contacts-block-title{
+        font-size: 25px;
+        line-height: 33px;
+        padding-right: 0;
+    }
+}
+@media screen and (max-width:340px){
+    .select-block{
+        min-width: 220px;
+    }
+}
