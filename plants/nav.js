@@ -73,3 +73,17 @@ document.querySelectorAll('.prices-accordion').forEach((el) => {
 		}
 	})
 })
+function myFunctionAccordion() {
+	document.getElementById("accordionBg").style.backgroundColor = '#D6E7D2';
+	document.getElementById("accordionBg2").style.backgroundColor = '#D6E7D2';
+	document.getElementById("accordionBg3").style.backgroundColor = '#D6E7D2';
+}
+function myFunctionAccordionTitle() {
+	document.getElementById("accordionTitle").style.backgroundColor = 'transparent';
+}
+function myFunctionAccordionTitle2() {
+	document.getElementById("accordionTitle2").style.backgroundColor = 'transparent';
+}
+function myFunctionAccordionTitle3() {
+	document.getElementById("accordionTitle3").style.backgroundColor = 'transparent';
+}

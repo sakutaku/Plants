@@ -125,30 +125,48 @@
             <div class="container prices-inner">
                 <div class="prices-inner1">
                     <h2 class="prices-title title1">Prices</h2>
-                    <!-- <div class="prices-links">
-                        <a href="#" class="prices-link"><span>Basics</span></a>
-                        <span></span>
-                        <a href="#" class="prices-link"><span>Standard</span></a>
-                        <a href="#" class="prices-link"><span>Pro care</span></a>
-                    </div> -->
                     <div class="prices-links">
-                        <div class="prices-accordion">Basics</div>
-                        <div class="accordionContent">
-                            <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                            <span><span>$15 </span>/ per hour</span>
-                            <button type="button">Order</button>
+                        <div class="accordions" id="accordionBg" onclick="myFunctionAccordion()">
+                            <div class="prices-accordion" id="accordionTitle"
+                            onclick="myFunctionAccordionTitle()">
+                            <span>Basics</span>
+                            <img src="images/ic-1.svg" alt="tick">
+                            </div>
+                            <div class="accordionContent" id="accordionInner" onclick="myFunctionAccordion()">
+                                <p class="accordionTxt">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                <span class="accordionTxt2">
+                                    <span class="accordionTxtPrice"><span class="accordionDollar">$</span>15</span>
+                                    / per hour</span>
+                                <a href="#contacts" class="accordionBtn">Order</a>
+                            </div>
                         </div>
-                        <div class="prices-accordion">Standard</div>
-                        <div class="accordionContent">
-                            <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                            <span><span>$25 </span>/ per hour</span>
-                            <button type="button">Order</button>
+                        <div class="accordions" id="accordionBg2" onclick="myFunctionAccordion()">
+                            <div class="prices-accordion" id="accordionTitle2" onclick="myFunctionAccordionTitle2()">
+                                <span>Standard</span>
+                                <img src="images/ic-1.svg" alt="tick">
+                            </div>
+                            <div class="accordionContent">
+                                <p class="accordionTxt">Release of Letraset sheets containing Lorem Ipsum passages, and
+                                more recently</p>
+                                <span class="accordionTxt2">
+                                    <span class="accordionTxtPrice"><span class="accordionDollar">$</span>25</span>
+                                    / per hour</span>
+                                <a href="#contacts" class="accordionBtn">Order</a>
+                            </div>
                         </div>
-                        <div class="prices-accordion">Pro care</div>
-                        <div class="accordionContent">
-                            <p>Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                            <span><span>$35 </span>/ per hour</span>
-                            <button type="button">Order</button>
+                        <div class="accordions" id="accordionBg3" onclick="myFunctionAccordion()">
+                            <div class="prices-accordion" id="accordionTitle3" onclick="myFunctionAccordionTitle3()">
+                                    <span>Pro care</span>
+                                    <img src="images/ic-1.svg" alt="tick">
+                            </div>
+                            <div class="accordionContent">
+                                <p class="accordionTxt">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                                <span class="accordionTxt2">
+                                    <span class="accordionTxtPrice">
+                                        <span class="accordionDollar">$</span>35</span>
+                                    / per hour</span>
+                                <a href="#contacts" class="accordionBtn">Order</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,7 +179,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts-block container">
+        <section class="contacts-block container" id="contacts">
             <h4 class="contacts-block-title">Contact us</h4>
             <div class="contacts-block-inner">
                 <div class="contacts-block-img">

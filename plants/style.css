@@ -268,36 +268,63 @@ html {
     border: 1px solid #E3E1D5;
     border-radius: 20px;
 }
-.accordionContent{
-    max-height: 0;
-    overflow: hidden;
+.accordions{
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
-.prices-link{
-    display: block; 
-    position: relative;
-    text-decoration: none;
+.prices-accordion{
     color: #000000;
     font-weight: 700;
-    width: 250px;
-    padding: 13px 0;
+    padding: 13px 15px;
     background-color: #EDF2EC;
     border-radius: 20px;
-    margin-bottom: 32px;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.prices-link span{
-    margin-left: 40px;
+.accordionContent{
+    transition: 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
 }
-.prices-link::after{
-    content: "";
-    background-image: url(images/ic-1.svg);
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 16px;
-    right: 39px;
+.accordionTxt{
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 10px;
+    color: #717171;
+    border-top: 0.5px solid #AEA1A1;
+    margin: 0;
+    padding: 6px 0;
 }
-.prices-link:last-child{
-    margin-bottom: 0;
+.accordionTxt2{
+    font-size: 12px;
+    color: #000;
+    line-height: 20px;
+}
+.accordionTxtPrice{
+    font-size: 16px;
+    color: #E06733;
+    font-weight: 700;
+}
+.accordionDollar{
+    font-size: 12px;
+}
+.accordionBtn{
+    display: block;
+    text-decoration: none;
+    width: 86px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #717171;
+    background-color: #fff;
+    border: none;
+    padding: 3px 20px;
+    margin-bottom: 15px;
 }
 .prices-inner2{
     text-align: right;
