@@ -57,3 +57,19 @@ function navToggle() {
 navToggle();
 
 // This is function for service-block
+
+//This is a function for accordion in prices-block
+
+document.querySelectorAll('.prices-accordion').forEach((el) => {
+	el.addEventListener('click', () => {
+		let accordionContent = el.nextElementSibling;
+
+		if (accordionContent.style.maxHeight) {
+			document.querySelectorAll('.accordionContent').forEach((el) => el.style.maxHeight = null)
+		} 
+		else {
+			document.querySelectorAll('.accordionContent').forEach((el) => el.style.maxHeight = null)
+			accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'
+		}
+	})
+})
