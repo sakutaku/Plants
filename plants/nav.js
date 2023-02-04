@@ -1,4 +1,4 @@
-// This is a function for burger Menu:
+// Block Header (burger menu).
 
 function navToggle() {
 
@@ -56,9 +56,9 @@ function navToggle() {
 }
 navToggle();
 
-// This is function for service-block
+// Block Services.
 
-//This is a function for accordion in prices-block
+//Block Prices.
 
 document.querySelectorAll('.prices-accordion').forEach((el) => {
 	el.addEventListener('click', () => {
@@ -87,3 +87,28 @@ function myFunctionAccordionTitle2() {
 function myFunctionAccordionTitle3() {
 	document.getElementById("accordionTitle3").style.backgroundColor = 'transparent';
 }
+
+//Block Contacts.
+
+document.querySelector('.dropdown-btn').addEventListener('click', function () {
+	document.querySelector('.dropdown-list').classList.toggle('dropdown-list-active');
+})
+document.querySelectorAll('.dropdown-list-item').forEach(function (listItem) {
+	listItem.addEventListener('click', function (e) {
+		e.stopPropagation();
+		document.querySelector('.dropdown-btn').innerText = this.innerText; 
+		document.querySelector('.dropdown-btn').focus();
+		document.querySelector('.dropdown-list').classList.remove('dropdown-list-active');
+	})
+})
+// document.querySelector('.select-block-info-inner').addEventListener('click', function () {
+	
+// })
+// document.querySelector('.dropdown-list-item1').addEventListener('click', function () {
+// 	document.querySelector('.select-block-info-inner').classList.toggle('select-block-info-inner1');
+// })
+document.addEventListener('click', function (e) {
+	if (e.target !== document.querySelector('.dropdown-btn')) {
+		document.querySelector('.dropdown-list').classList.remove('dropdown-list-active')
+	}
+})
