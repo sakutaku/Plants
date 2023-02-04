@@ -1,3 +1,5 @@
+// This is a function for burger Menu:
+
 function navToggle() {
 
 	let navBtn = document.getElementById('navBtn');
@@ -52,5 +54,6 @@ function navToggle() {
 	}
 
 }
-
 navToggle();
+
+// This is function for service-block
