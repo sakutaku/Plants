@@ -444,10 +444,13 @@ html {
     color: #717171;
     border-bottom: 1px solid #717171;
 }
-.select-block-info-inner{
+.select-block-info-inner1,
+.select-block-info-inner2,
+.select-block-info-inner3,
+.select-block-info-inner4{
     display: none;
 }
-.select-block-info-inner1{
+.select-block-info-inner-active{
     display: block;
 }
 .footer{
