@@ -453,6 +453,36 @@ html {
 .select-block-info-inner-active{
     display: block;
 }
+.select-table{
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+.select-table th,
+.select-table td{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.select-table-btn{
+    font-size: 10px;
+    color: #717171;
+    font-weight: 700;
+    background-color: transparent;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    padding: 7px 29px;
+    cursor: pointer;
+}
+.table-black{
+    color: #000000;
+}
+.table-gray{
+    color: #717171;
+}
 .footer{
     background-color: #FFFFFF;
     padding: 61px 0;

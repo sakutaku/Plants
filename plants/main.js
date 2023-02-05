@@ -26,7 +26,6 @@ function navToggle() {
 
 	}
 
-
 	window.addEventListener("resize", resizeHandler, false);
 
 	function resizeHandler() {
@@ -112,7 +111,7 @@ dropDownListItems.forEach(function (listItem) {
 })
 // Клик снаружи дропдауна. Закрыть дропдаун
 document.addEventListener('click', function (e) {
-	if (e.target !== document.querySelector('.dropdown-btn')) {
+	if (e.target !== dropDownBtn) {
 		dropDownList.classList.remove('dropdown-list-active');
 	}
 })
@@ -123,24 +122,19 @@ document.addEventListener('keydown', function (e) {
 	}
 })
 
-// document.querySelector('.select-block-info-inner').addEventListener('click', function () {
-	
-// })
-// По нажатию выходит контент
-// document.querySelector('.dropdown-list-item1').addEventListener('click', function () {
-// 	document.querySelector('.select-block-info-inner1').classList.toggle('select-block-info-inner-active');
-// })
-// document.querySelector('.dropdown-list-item2').addEventListener('click', function () {
-// 	document.querySelector('.select-block-info-inner2').classList.toggle('select-block-info-inner-active');
-// })
-// document.querySelector('.dropdown-list-item3').addEventListener('click', function () {
-// 	document.querySelector('.select-block-info-inner3').classList.toggle('select-block-info-inner-active');
-// })
-// document.querySelector('.dropdown-list-item4').addEventListener('click', function () {
-// 	document.querySelector('.select-block-info-inner4').classList.toggle('select-block-info-inner-active');
-// })
-// document.addEventListener('click', function (e) {
-// 	if (e.target !== document.querySelector('.select-block-info')) {
-// 		document.querySelector('.select-block-info-inner').remove('.select-block-info-inner1');
-// 	}
-// })
+//По нажатию выходит контент
+document.querySelector('.dropdown-list-item1').addEventListener('click', function () {
+	document.querySelector('.select-block-info-inner1').classList.toggle('select-block-info-inner-active');
+})
+document.querySelector('.dropdown-list-item2').addEventListener('click', function () {
+	document.querySelector('.select-block-info-inner2').classList.toggle('select-block-info-inner-active');
+})
+document.querySelector('.dropdown-list-item3').addEventListener('click', function () {
+	document.querySelector('.select-block-info-inner3').classList.toggle('select-block-info-inner-active');
+})
+document.querySelector('.dropdown-list-item4').addEventListener('click', function () {
+	document.querySelector('.select-block-info-inner4').classList.toggle('select-block-info-inner-active');
+})
+// function myFunctionCards() {
+// 	document.getElementById("table1").style.display = 'none';
+// }
