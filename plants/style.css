@@ -199,6 +199,18 @@ html {
     color: #FFFFFF;
     cursor: pointer;
 }
+
+.service-btns:active {
+    background-color: #E06733;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.service-btns-active{
+    background-color: #E06733;
+    color: #FFFFFF;
+    cursor: pointer;
+}
 .service-btns2{
     padding: 12px 54px;
 }
@@ -211,6 +223,9 @@ html {
     border-radius: 20px 20px 0px 0px;
     margin-bottom: -5px;
     width: 100%;
+}
+.blur{
+    filter: blur(10px);
 }
 .service-cards{
     width: 27%;
@@ -444,10 +459,7 @@ html {
     color: #717171;
     border-bottom: 1px solid #717171;
 }
-.select-block-info-inner1,
-.select-block-info-inner2,
-.select-block-info-inner3,
-.select-block-info-inner4{
+.select-block-info-inner1{
     display: none;
 }
 .select-block-info-inner-active{
